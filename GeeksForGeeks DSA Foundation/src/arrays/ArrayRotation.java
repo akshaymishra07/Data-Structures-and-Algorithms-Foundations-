@@ -26,6 +26,8 @@ public class ArrayRotation {
 	    	
 	    }
 	}
+	
+	
 
 	static void leftRotateByOne(int arr[]) {
 		int n = arr.length;
@@ -41,6 +43,21 @@ public class ArrayRotation {
 
 	}
 
+	/*To rotate an array by k places counter clockwise without using any auxiliary space we can use call the
+	 * leftRotateByOne function k times , Time complexity will be O(n*k) : where n is size of the array */
+	
+	static void leftRotateByK(int arr[] , int k) {
+		
+		for(int i = 0 ; i < k ; i++) {
+			
+			leftRotateByOne(arr);
+		}
+		
+	}
+	
+	
+	
+	
 	static void printArray(int arr[]) {
 
 		for (int i = 0; i < arr.length; i++) {
@@ -53,7 +70,7 @@ public class ArrayRotation {
 
 		int arr[] = new int[] { 1, 2, 3, 4, 5 , 6 ,7 };
 
-		simpleLeftRotationByK(arr, 5);
+	    leftRotateByK(arr, 3);
 		printArray(arr);
 
 	}
