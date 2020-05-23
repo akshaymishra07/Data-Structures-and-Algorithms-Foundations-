@@ -41,12 +41,15 @@ public class EquilibriumIndex {
 			        // now sum will be right sum for index i
 			        sum -= arr[i];
 			        
+			       
 			        
 			        if (sum == leftsum ) {
+			        	
 			        	return i;
 			        }
 			            
 			        leftsum += arr[i];
+			        
 			    }
 		
 		return -1;

@@ -21,6 +21,10 @@
  *      
  *      If there is any non zero value in the hashmap then the strings 
  *      are not anagrams.
+ *      
+ *      
+ *      **Other solutions also exist which can be 
+ *        reffered on geeksforgeeks
  * 
  * */
 
