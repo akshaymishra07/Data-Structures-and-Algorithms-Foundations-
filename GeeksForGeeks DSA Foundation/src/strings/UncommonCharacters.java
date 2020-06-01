@@ -127,7 +127,8 @@ public class UncommonCharacters {
 
 		String str1 = kb.next();
 		String str2 = kb.next();
-
+ 
+		
 		String result = uncommonOptimized(str1, str2);
 
 		System.out.println(result);
