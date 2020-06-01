@@ -50,8 +50,7 @@ public class UncommonCharacters {
 
 		}
 
-		printArray(arr);
-		System.out.println();
+		
 
 		for (int i = 0; i < s2.length(); i++) {
 
@@ -61,7 +60,7 @@ public class UncommonCharacters {
 				arr[s2.charAt(i) - 'a'] = 2;
 		}
 
-		printArray(arr);
+		
 
 		for (int i = 0; i < arr.length; i++) {
 
