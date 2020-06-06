@@ -16,7 +16,7 @@
  *    are same or not. Then remove the extra characters from 
  *    both the strings.
  *    
- * 
+ *    >>better approach will be updated soon.
  * */
 
 
