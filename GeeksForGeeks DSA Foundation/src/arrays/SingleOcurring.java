@@ -31,7 +31,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class SingleMissing {
+public class SingleOcurring {
 
 	
 	static int findSingleElement(int arr[]) {
