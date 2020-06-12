@@ -13,7 +13,7 @@
  *    I/P -> ___My Name is Khan_____  (_ denotes spaces at front and end)
  *    O/P -> My%20Name%20is%20Khan
  *    
- *    
+ *    Better solutions can also be drawn 
  * */
 
 
