@@ -25,7 +25,9 @@
  *              the second array. While traversing the second array 
  *              see if all the elements of second array give a hit 
  *              in the hash.          
- *               
+ *              
+ *        Readers are Free to suggest the better optimized 
+ *        solutions      
  * 
  * 
  * */
