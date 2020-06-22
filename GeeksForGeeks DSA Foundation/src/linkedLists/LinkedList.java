@@ -24,4 +24,25 @@ public class LinkedList {
 
 	}
 
+	@Override
+	public String toString() {
+		String result = "";
+		
+		if(head == null) {
+			return "null";
+		}
+		
+		Node temp = head;
+		
+		while(temp != null) {
+			
+			result += temp.data +" ";
+			
+		}
+		
+		return result;
+	}
+	
+	
+
 }
