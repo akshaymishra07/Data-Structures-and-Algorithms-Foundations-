@@ -10,16 +10,16 @@ public class LinkedList {
 
 			head = node;
 		} else {
-            
+
 			Node temp = head;
-			
-			while(temp.next != null){
-				
+
+			while (temp.next != null) {
+
 				temp = temp.next;
 			}
-			
+
 			temp.next = node;
-			
+
 		}
 
 	}
@@ -27,22 +27,21 @@ public class LinkedList {
 	@Override
 	public String toString() {
 		String result = "";
-		
-		if(head == null) {
+
+		if (head == null) {
 			return "null";
 		}
-		
+
 		Node temp = head;
-		
-		while(temp != null) {
-			
-			result += temp.data +" ";
-			
+
+		while (temp != null) {
+
+			result += temp.data + " ";
+			temp = temp.next;
+
 		}
-		
+
 		return result;
 	}
-	
-	
 
 }
