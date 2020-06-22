@@ -36,11 +36,11 @@ public class LinkedList {
 
 		while (temp != null) {
 
-			result += temp.data + " ";
+			result += temp.data +"->";
 			temp = temp.next;
 
 		}
-
+        result += "null";
 		return result;
 	}
 
