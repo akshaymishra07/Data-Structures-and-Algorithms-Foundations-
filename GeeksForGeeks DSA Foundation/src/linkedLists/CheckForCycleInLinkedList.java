@@ -1,10 +1,19 @@
+
+/*
+ *   Floyd's Cycle detection approach is used to solve the
+ *   problem.
+ *   
+ *   It uses 2 pointers.
+ * 
+ * */
+
 package linkedLists;
 
 import java.util.Scanner;
 
 public class CheckForCycleInLinkedList {
 	
-	static boolean isCircular(Node head) {
+	static boolean hasCycle(Node head) {
 		
 		Node temp = head;
 		
@@ -48,7 +57,7 @@ public class CheckForCycleInLinkedList {
 		temp.next = ll.head.next.next;
 		
 		
-		boolean result = isCircular(ll.head);
+		boolean result = hasCycle(ll.head);
 		
 		System.out.println(result);
 
