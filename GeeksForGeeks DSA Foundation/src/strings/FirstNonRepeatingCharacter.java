@@ -9,21 +9,7 @@
  *   to keep the count of the characters and the 
  *   time complexity is O(N) with space complexity O(N);
  * 
- *   *****UPDATE***
  *   
- *  1.Optimized Approach(Using Visited array)
- *  
- *  We can use visited arrays.
- *  
- *  We can start traversing from the right side of the string
- *  and mark in the arrays of characters as visited if it is
- *  not visited earlier.
- *  
- *  If a character is visited earlier then its index is
- *  assigned to the result variable;
- *  
- *  
- *  function  usingVisitedArray() implements this technique;
  * 
  * */
 
@@ -61,27 +47,7 @@ public class FirstNonRepeatingCharacter {
 		return "-1";
 	}
 
-	static char usingVisitedArray(String str) {
-
-		boolean visited[] = new boolean[26];
-		int result = -1;
-
-		for (int i = str.length() - 1; i >= 0; i--) {
-
-			if (visited[str.charAt(i) - 'a'] == false) {
-
-				visited[str.charAt(i) - 'a'] = true;
-			} else
-				result = i;
-
-		}
-
-		if (result == -1) {
-			return '#';
-		} else
-			return str.charAt(result);
-
-	}
+	
 
 	public static void main(String[] args) {
 
@@ -89,15 +55,9 @@ public class FirstNonRepeatingCharacter {
 
 		String str = kb.next();
 
-		//System.out.println(firstNonRep(str));
+		System.out.println(firstNonRep(str));
         
-		char result = usingVisitedArray(str);
 		
-		if(result == '#') {
-			System.out.println("Distinct Characters");
-		}
-		else
-			System.out.println(result);
 		
 	}
 
