@@ -6,6 +6,8 @@
  *   
  *   
  *   
+ *   
+ *   
  *   An efficient approach will be to observe first that there can 
  *   be a total of 26 unique characters only. So, we can store the 
  *   count of occurrences of all the characters from ‘a’ to ‘z’ in 
@@ -16,9 +18,49 @@
  *   occurred in input string.
  *   
  *   
+ *   
+ *   
  *   Time : O(n) : n is length of the string
  *   Auxiliary space : O(1) : character count array used is of
  *                            size 26 , hence constant space.
+ * 
+ * 
+ *    
+ *    // Java program to sort a string in descending 
+// order using library function 
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+    static void descOrder(char[] s)  
+    { 
+        Arrays.sort(s); 
+        reverse(s); 
+    } 
+  
+    static void reverse(char[] a)  
+    { 
+        int i, n = a.length; 
+        char t; 
+        for (i = 0; i < n / 2; i++)  
+        { 
+            t = a[i]; 
+            a[i] = a[n - i - 1]; 
+            a[n - i - 1] = t; 
+        } 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        char[] s = "geeksforgeeks".toCharArray(); 
+        descOrder(s); // function call 
+        System.out.println(String.valueOf(s)); 
+    } 
+} 
+ * 
+ * 
  * 
  * */
 
