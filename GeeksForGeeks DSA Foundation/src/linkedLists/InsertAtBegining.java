@@ -11,21 +11,15 @@ import java.util.Scanner;
 
 public class InsertAtBegining {
 
-	static void insertAtBeginning(Node head, int key) {
+	static Node insertAtBeginning(Node head, int key) {
 
 		Node newNode = new Node(key);
 
 		newNode.next = head;
 
 		head = newNode;
-		Node temp = head;
-		System.out.println("After Insertion");
-		while(temp != null) {
-			
-			System.out.print(temp.data + " ");
-			
-			temp = temp.next;
-		}
+
+		return head;
 	}
 
 	public static void main(String[] args) {
@@ -46,10 +40,10 @@ public class InsertAtBegining {
 		System.out.println("Before Insertion");
 		System.out.println(ll);
 
-		insertAtBeginning(ll.head, key);
+		Node newHead = insertAtBeginning(ll.head, key);
+		ll.head = newHead;
 
-		
-		
+		System.out.println(ll);
 
 	}
 
