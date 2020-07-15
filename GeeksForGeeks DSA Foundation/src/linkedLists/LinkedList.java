@@ -23,6 +23,18 @@ public class LinkedList {
 		}
 
 	}
+	
+	public void insertAtHead(int key) {
+		
+		Node newNode = new Node(key);
+		if(head == null) {
+			
+			head = newNode;
+		}
+		
+		newNode.next = head;
+		head = newNode;
+	}
 
 	@Override
 	public String toString() {
